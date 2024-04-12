@@ -148,7 +148,7 @@
 					else
 					{
 						echo "Submit Error";
-						echo mysqli_error();
+						echo mysqli_error($dbc);
 						header("location: add_flight_details.php?msg=failed");
 					}
 				}
